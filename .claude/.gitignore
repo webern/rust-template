@@ -1,0 +1,11 @@
+# ignore memory items
+projects/
+
+# i have seen claude put something here when asked to use a worktree
+worktrees/
+
+# ignore this high churn file that is written whenever you allow a tool use
+settings.local.json
+
+# allow developers to write their own instructions here without checking them in
+CLAUDE.local.md

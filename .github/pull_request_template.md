@@ -1,15 +1,11 @@
-**Issue Number**
+## Summary
 
-<!-- put the issue number here -->
+<!-- what changed and why, in a paragraph or two -->
 
-**Description of Changes**
+## Testing
 
-<!-- describe the changes here -->
+<!-- what was run; `make ci` at minimum -->
 
-**Testing**
+## References
 
-<!-- describe how you tested the changes -->
-
-**Disclaimer**
-
-By submitting this pull request, I agree that this contribution is dual-licensed under the terms of both the Apache License, version 2.0, and the MIT license.
+<!-- Closes #, Progresses #, related PRs -->
