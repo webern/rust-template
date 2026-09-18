@@ -11,7 +11,8 @@ user-invocable: true
 
 Use `<prompt>` and your context to understand what the PR is about.
 
-Use GitHub, always with `--repo webern/proj`, and always run local git as `git -C <path>`.
+Use `gh` for GitHub interactions, always with `--repo webern/proj`, and always run local git as
+`git -C <path>`.
 
 Search the open issues for ones that this PR would close or is related to. Make a list of issues it
 closes and related issues. It might also be related to other PRs.
@@ -21,7 +22,7 @@ closes and related issues. It might also be related to other PRs.
 Have you followed relevant repo skills in your implementation? If not, you may need to make changes
 before you are ready to open the PR.
 
-You should have already verified that it will pass CI, by now. If you havent, run `make ci`.
+You should have already verified that the branch passes CI. If you haven't, run `make ci`.
 
 ## Writing it
 

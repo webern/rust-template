@@ -48,8 +48,8 @@ Give repo-relative paths.
 A design for one change or one decision: a plan, a proposal, a post-mortem. Either party may write
 one. The first line after the title is `Status: DRAFT`, `APPROVED`, `IMPLEMENTED` or
 `SUPERSEDED by <doc>`, then what the doc is, how it was produced, and what it binds. Number the
-sections so other docs and PRs can cite them. Once the state is `IMPLEMENTED` or `SUPERSEDED`, they
-should no longer be updated (that's what `asbuilt` docs are for).
+sections so other docs and PRs can cite them. Once a doc's state is `IMPLEMENTED` or `SUPERSEDED`,
+it should no longer be updated (that's what `asbuilt` docs are for).
 
 ## Tension between desired and as-built
 

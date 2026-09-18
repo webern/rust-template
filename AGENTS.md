@@ -33,8 +33,8 @@ the Makefile, `scripts/`, CI and dependencies; read it before changing any of th
 ## Rules
 
 - Run git as `git -C <path>` and gh with `--repo webern/proj`.
-- Commits, PRs, issues and comments carry no AI attribution, however human writing and AI writing
-  must be visually distinct from one another (see `/proj-open-pr` for an example).
+- Commits, PRs, issues and comments carry no AI attribution. Human writing and AI writing must be
+  visually distinct from one another (see `/proj-open-pr` for an example).
 - `docs/design/*.desired.md` are human-authored. Do not rewrite them.
 
 ## Initial setup
