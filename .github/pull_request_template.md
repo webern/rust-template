@@ -1,11 +1,17 @@
+## Human Summary
+
+TODO: human writes here
+
 ## Summary
 
-<!-- what changed and why, in a paragraph or two -->
+What changed and why.
 
 ## Testing
 
-<!-- what was run; `make ci` at minimum -->
+- [x] `make ci`: exit 0
+- [x] whatever else was run
 
 ## References
 
-<!-- Closes #, Progresses #, related PRs -->
+- Closes #XXX
+- Progresses #YYY

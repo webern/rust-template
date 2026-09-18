@@ -11,8 +11,8 @@ user-invocable: true
 
 ## Build Doctrine
 
-North Star: cloning the repository onto a new machine, or creating a new git worktree, "just
-works". Developers and agents should not have to read instructions to set up a machine.
+North Star: cloning the repository onto a new machine, or creating a new git worktree, "just works".
+Developers and agents should not have to read instructions to set up a machine.
 
 The following terminology is used consistently in sessions and repo documentation.
 
@@ -39,10 +39,11 @@ first-party source is never an External Asset. If the project needs any, a `fetc
 them, pinned to a known version under source control and checked with a cheap local-state test on
 every build.
 
-Scripts live in `scripts/`. A recipe longer than a few lines, or one that needs real error
-handling, is a script. Scripts are bash, open with a comment saying what they are for, use
-`set -euo pipefail` unless they must keep going after a failure, and validate arguments with
-`${1:?usage: ...}`.
+Scripts live in `scripts/`. A recipe longer than a few lines, or one that needs real error handling,
+is a script. Scripts are bash, open with a comment saying what they are for, use `set -euo pipefail`
+unless they must keep going after a failure, and validate arguments with `${1:?usage: ...}`.
+
+Development is supported on macOS and Linux machines.
 
 ## Makefile Doctrine
 
@@ -62,11 +63,10 @@ Target names start with a verb. The vocabulary:
 `ci` is the one non-verb target. It runs what CI runs: preflight, then check, build and test, with
 `--locked`. Both workflows call it so they cannot drift.
 
-The scope follows the verb: `check-clippy` runs clippy, `fix-fmt` runs rustfmt. The bare verb is
-the "do everything" version: `make build` builds every target, `make test` runs every test,
-`make check` runs every check that gates CI, `make clean` removes everything the Makefile
-introduced. A check too slow for every run may stay out of the bare verb if help says so, as
-`check-publish` does.
+The scope follows the verb: `check-clippy` runs clippy, `fix-fmt` runs rustfmt. The bare verb is the
+"do everything" version: `make build` builds every target, `make test` runs every test, `make check`
+runs every check that gates CI, `make clean` removes everything the Makefile introduced. A check too
+slow for every run may stay out of the bare verb if help says so, as `check-publish` does.
 
 Help is the default goal, hand-written, and ordered: each plain verb then its scoped versions
 alphabetically, in the order build, test, check, clean; then ci, fix, preflight and any other target
@@ -78,6 +78,6 @@ Target definitions in the file follow the order of help, with `set` targets firs
 ## CI Doctrine
 
 Actions are pinned by commit SHA with the version and date in a trailing comment; dependabot bumps
-them. Every job declares the least `permissions` it needs. A release is a read-only verify job,
-then a build job per target, then one privileged publish job that runs only after the others pass;
-the `/proj-release` skill has the details.
+them. Every job declares the least `permissions` it needs. A release is a read-only verify job, then
+a build job per target, then one privileged publish job that runs only after the others pass; the
+`/proj-release` skill has the details.

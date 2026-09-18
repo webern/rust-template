@@ -40,15 +40,16 @@ Each starts with YAML frontmatter:
 
 Write for a human first. A high-level mental model comes before any detail; define terms before
 using them; show directory structure the way `tree` does; make relationships explicit in words
-(inherits, composes, calls) rather than by arrow shape alone. Mermaid is welcome. Give
-repo-relative paths.
+(inherits, composes, calls) rather than by arrow shape alone. Mermaid and visual aids are welcome.
+Give repo-relative paths.
 
 ### Topic docs (`{{topic}}.md`)
 
 A design for one change or one decision: a plan, a proposal, a post-mortem. Either party may write
 one. The first line after the title is `Status: DRAFT`, `APPROVED`, `IMPLEMENTED` or
 `SUPERSEDED by <doc>`, then what the doc is, how it was produced, and what it binds. Number the
-sections so other docs and PRs can cite them.
+sections so other docs and PRs can cite them. Once the state is `IMPLEMENTED` or `SUPERSEDED`, they
+should no longer be updated (that's what `asbuilt` docs are for).
 
 ## Tension between desired and as-built
 

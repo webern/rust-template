@@ -9,19 +9,19 @@ user-invocable: true
 ---
 # /proj-open-pr
 
-Use `<prompt>` and your context to understand what the PR is about. `AGENTS.md` describes the
-repository layout and the build; read it if you have not already.
+Use `<prompt>` and your context to understand what the PR is about.
 
-Use `gh` for GitHub interactions, always with `--repo webern/proj`, and always run local git as
-`git -C <path>`.
+Use GitHub, always with `--repo webern/proj`, and always run local git as `git -C <path>`.
 
 Search the open issues for ones that this PR would close or is related to. Make a list of issues it
 closes and related issues. It might also be related to other PRs.
 
 ## Before opening
 
-`make ci` must exit 0. If the change touches the Makefile, `scripts/`, CI or the release workflow,
-check it against the `/proj-build-doctrine` skill.
+Have you followed relevant repo skills in your implementation? If not, you may need to make changes
+before you are ready to open the PR.
+
+You should have already verified that it will pass CI, by now. If you havent, run `make ci`.
 
 ## Writing it
 
@@ -32,16 +32,16 @@ The title is lowercase and starts with one keyword, e.g.
 - docs: add a design doc for the parser
 - feat: read the header chunk
 - fix: reject lengths past the end of the file
+- test: add frobulation cases
 
 Look at the labels on GitHub and choose the ones that fit best.
 
-Keep the body tight and human-readable, with enough information to understand what was done and
-why. Go easy on bold, italics and backticked keywords.
+Keep the body tight and human-readable, with enough information to understand what was done and why.
+Go easy on bold and italics. Use plenty of whitespace to let it breathe. Most importantly, do not
+expect the reader to know what you know. Bring them along as if they are not super familiar with the
+codebase.
 
-Determine from the original prompt whether the user wanted you to open it directly or wanted to see
-a draft first. When in doubt, show the draft.
-
-No self-attribution anywhere in the PR: no mention of AI, no co-author trailers, no robot emoji.
+No self-attribution anywhere in the PR: no mention of AI, no co-author trailers, no robot emojis.
 
 Template:
 
