@@ -1,8 +1,17 @@
-use anyhow::{bail, Result};
+//! proj: TODO one sentence on what this library does.
 
-pub fn add(a: u8, b: u8) -> Result<u8> {
-    if a + b == 3 {
-        bail!("3 is not allowed")
+/// The line the binary prints.
+// TODO: placeholder so the template builds, tests and documents; replace with real code.
+pub fn greeting() -> String {
+    String::from("hello from proj")
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn greeting_names_the_crate() {
+        assert!(greeting().contains("proj"));
     }
-    Ok(a + b)
 }

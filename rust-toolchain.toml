@@ -1,0 +1,5 @@
+# rustup installs what this names on first use, so a fresh clone builds with
+# the same channel and components as CI.
+[toolchain]
+channel = "stable"
+components = ["rustfmt", "clippy"]

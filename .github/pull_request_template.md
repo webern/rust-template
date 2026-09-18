@@ -1,15 +1,17 @@
-**Issue Number**
+## Human Summary
 
-<!-- put the issue number here -->
+TODO: human writes here
 
-**Description of Changes**
+## Summary
 
-<!-- describe the changes here -->
+What changed and why.
 
-**Testing**
+## Testing
 
-<!-- describe how you tested the changes -->
+- [x] `make ci`: exit 0
+- [x] whatever else was run
 
-**Disclaimer**
+## References
 
-By submitting this pull request, I agree that this contribution is dual-licensed under the terms of both the Apache License, version 2.0, and the MIT license.
+- Closes #XXX
+- Progresses #YYY

@@ -1,11 +1,30 @@
 [package]
-name = "rust-template"
-version = "0.0.0"
+name = "proj"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
 authors = ["Matthew James Briggs <matthew.james.briggs@gmail.com>"]
-edition = "2018"
-exclude = ["tests/", ".gitignore"]
-license = "MIT OR Apache-2.0"
+description = "TODO: one sentence; crates.io shows it"
+repository = "https://github.com/webern/proj"
+license = "MIT"
 readme = "README.md"
+keywords = []
+categories = []
+# Keep the published crate to what a consumer of it needs.
+exclude = [
+    ".agents/",
+    ".claude/",
+    ".github/",
+    "docs/",
+    "scripts/",
+    "AGENTS.md",
+    "Makefile",
+    "rust-toolchain.toml",
+]
 
 [dependencies]
-anyhow = "1"
+
+[dev-dependencies]
+
+[lints.rust]
+missing_docs = "warn"

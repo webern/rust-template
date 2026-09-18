@@ -1,10 +1,5 @@
-use rust_template::add;
+//! The command-line entry point. The logic lives in the library.
 
-fn main() -> ! {
-    if let Err(e) = add(1, 2) {
-        eprintln!("{}", e);
-        std::process::exit(1)
-    } else {
-        std::process::exit(0)
-    }
+fn main() {
+    println!("{}", proj::greeting());
 }

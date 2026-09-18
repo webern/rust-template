@@ -1,2 +1,30 @@
-/target
-.idea
+# rust canonical
+target/
+
+# common places to put ignored artifacts
+build/
+.build/
+test/output/
+.test/
+.ignored/
+.tmp/
+
+# because llms love python
+__pycache__/
+
+# some ide stuff and other things that have appeared in the past
+.idea/
+.vscode/
+cmake-build-*/
+.obsidian/
+.playwright-cli/*
+
+# claude code local settings
+.claude/settings.local.json
+.claude/worktrees
+CLAUDE.local.md
+
+# just in case
+*.pem
+*.env
+*.secrets
